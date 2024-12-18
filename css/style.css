@@ -1,0 +1,27 @@
+div.row-widget.stRadio > div {
+ flex-direction: row;
+ align-items: stretch;
+}
+
+div.row-widget.stRadio > div[role="radiogroup"] > label[data-baseweb="radio"]  {
+    /*background-color: rgb(240, 242, 246);*/
+    padding-right: 10px;
+    /*padding-left: 4px;*/
+    padding-bottom: 3px;
+    margin: 4px 0px;
+    border-radius: 0;
+    border-bottom: 2px solid rgba(169, 169, 169, 0.3);
+    transition: border-bottom-color 0.2s ease 0s;
+}
+
+/*change the background color of the parent label of the selected radio button*/
+div.row-widget.stRadio > div[role="radiogroup"] > label[data-baseweb="radio"]:has( > input[type="radio"]:checked) {
+    /*background-color: blanchedalmond;*/
+    border-bottom: 2px solid red;
+    transition: border-bottom-color 0.2s ease 0s;
+}
+
+/*hide the circle of the radio button*/
+div.row-widget.stRadio > div[role="radiogroup"] > label[data-baseweb="radio"] > div:first-child {
+    display: none;
+}

@@ -1,2 +1,11 @@
-streamlit
-openai
+huggingface_hub
+streamlit-elements==0.1.0
+streamlit-extras
+streamlit-agraph
+altair<5
+streamlit-vega-lite
+scikit-learn
+pymysql
+extra_streamlit_components
+st-clickable-images
+cryptography
